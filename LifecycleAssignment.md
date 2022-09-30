@@ -1,4 +1,4 @@
----
+
 
 # Activity Lifecycle ve Sorunlardan Kaçınmak
 Bir kullanıcı uygulamanızda gezinirken, uygulamanızdan çıkarken ve uygulamanıza geri dönerken, uygulamanızdaki Activity instanceları lifecyclelardaki farklı durumlar arasında geçiş yapar. Activity sınıfı, Activity’nin bir durumun değiştiğini bilmesini sağlayan bir dizi callback sağlar. (Sistemin bir Activity oluşturması, durdurması veya devam ettirmesi veya Activity’nin içinde bulunduğu süreci yok etmesi vb.)
@@ -34,7 +34,7 @@ onStop()’tan sonra Activity kullanıcı tarafından yeniden ön plana getirild
 ### onDestroy()
 Activity yok edilmeden önce çağrılan metottur. Uygulama içerisinde finish() metodunun çağrılmasıyla ya da Activity uzun süre etkin duruma gelmeyip sistem tarafından otomatik kapatıldığı durumlarda bu metot çağrılır. Uygulamanın hangi sebeble sonlandığını isFinishing metodunu kullanarak öğrenebiliriz.
 
----
+
 
 ## ANR(Application Not Responding) Hatası Nedir ve Nasıl Kaçınılır?
 ANR, Uygulama Yanıt Vermiyor anlamına gelir. UI güncellemekten sorumlu olan Main Thread’inde, genellikle yaklaşık 5 saniye olmak üzere uzun süren bir işlem yürütüyorsanız bir ANR oluşur. Bu noktada, GUI (Grafik Kullanıcı Arayüzü) kilitlenecek ve kullanıcının bastığı herhangi bir şeyle sonuçlanabilecek herhangi bir işlem yapılamayacaktır. Yaklaşık 5 saniye geçtikten sonra, thread hala düzelmediyse, kullanıcıya cihazın yanıt vermediğini bildiren bir ANR iletişim kutusu gösterilir ve kullanıcıya uygulamanın yanıt vermesi umuduyla bekleme veya force quit seçeneği verir.
