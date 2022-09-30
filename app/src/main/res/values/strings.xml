@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Odev2</string>
+    <string name="welcome_to_bauss">Welcome to\nBauuss</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="back_to_login_button">Back to Login Button</string>
+    <string name="sign_up_tv">Sign Up</string>
+    <string name="log_in_tv">Log in</string>
+    <string name="email_adress_tv">Email Adress</string>
+    <string name="password_tv">Password</string>
+    <string name="log_in_bttn">Log in</string>
+</resources>
