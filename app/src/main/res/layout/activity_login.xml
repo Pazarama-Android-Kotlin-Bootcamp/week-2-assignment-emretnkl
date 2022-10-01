@@ -65,6 +65,7 @@ tools:context=".LoginActivity">
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
+        android:padding="10dp"
         android:layout_height="40dp"
         android:background="@drawable/background_edittext_radius_with_10_dp"
         android:inputType="textEmailAddress"
@@ -96,6 +97,7 @@ tools:context=".LoginActivity">
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="40dp"
+            android:padding="10dp"
             android:background="@drawable/background_edittext_radius_with_10_dp"
             android:inputType="textPassword"
             app:backgroundTint="@null"
