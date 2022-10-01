@@ -8,18 +8,18 @@ import android.widget.ImageView
 
 class LoginActivity : AppCompatActivity() {
 
-    private lateinit var ivChangePasswordVisibility: ImageView // Parola görünürlüğünü sağlayan imageview oluşturuldu.
-    private var isVisibilityOn = false // Parola görünürlüğü false olarak initialize edildi.
-    private lateinit var signUpButton : Button // Kayıt butonu tanımlandı.
+    private lateinit var ivChangePasswordVisibility: ImageView // Image view has been created which provides password visibility.
+    private var isVisibilityOn = false // Password visibility initialized as false.
+    private lateinit var signUpButton : Button // Sign up button has been defined.
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        // View elemanları eşleştirildi.
+        // View elements has been matched.
         ivChangePasswordVisibility  = findViewById(R.id.ivShowPassword)
         signUpButton = findViewById(R.id.btnSignUp)
 
-        // Parola görünürlüğü değiştirme işlemi gerçekleşiyor.
+        // Password visibility operation is occuring.
         ivChangePasswordVisibility.setOnClickListener {
             if (isVisibilityOn) {
                 ivChangePasswordVisibility.setImageResource(R.drawable.ic_baseline_visibility_24)
@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        // Kayıt aktivitesine argümansız geçiş yapılıyor.
+        // Transition to Signup Activity without passing an argument.
         signUpButton.setOnClickListener {
             val intent = Intent(this,SignupActivity::class.java)
             startActivity(intent)
